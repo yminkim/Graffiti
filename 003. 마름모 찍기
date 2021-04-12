@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+	int i, j, k;
+	int num = 6;
+
+	for (i = 0; i < num; i++) {
+		for (j = 0; j < num - i; j++) {
+			printf(" ");
+		}
+		for (k = 0; k < i * 2 + 1; k++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	for (i = 0; i < num + 1; i++) {
+		for (k = 0; k < i; k++) {
+			printf(" ");
+		}
+		for (j = 0; j < (num + 1) * 2 - (i * 2 + 1); j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
+
+}
